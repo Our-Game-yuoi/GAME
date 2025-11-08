@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1s0fo3kiumo3"]
+
+[ext_resource type="Script" uid="uid://ddj62xfeqevme" path="res://main_menu.gd" id="1_eiy7p"]
+[ext_resource type="Texture2D" uid="uid://mkbwvk5seop8" path="res://imagines/White color _ cor branca branco (1).jpeg" id="2_h7a2f"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 570.5713
+offset_top = 364.5584
+offset_right = 570.5713
+offset_bottom = 364.5584
+script = ExtResource("1_eiy7p")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -470.5713
+offset_top = -435.5584
+offset_right = 675.4287
+offset_bottom = 520.4416
+texture = ExtResource("2_h7a2f")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.0
+offset_top = -50.5
+offset_right = 48.0
+offset_bottom = 50.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StartButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Start Game"
+
+[node name="SettingsButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Settings"
+
+[node name="ExitButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Exit"
+
+[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]
