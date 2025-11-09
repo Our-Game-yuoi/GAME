@@ -1,24 +1,29 @@
-[gd_scene load_steps=3 format=3 uid="uid://d1s0fo3kiumo3"]
+[gd_scene load_steps=5 format=3 uid="uid://d1s0fo3kiumo3"]
 
-[ext_resource type="Script" uid="uid://ddj62xfeqevme" path="res://main_menu.gd" id="1_eiy7p"]
-[ext_resource type="Texture2D" uid="uid://mkbwvk5seop8" path="res://imagines/White color _ cor branca branco (1).jpeg" id="2_h7a2f"]
+[ext_resource type="Script" uid="uid://c5fp210oxehe5" path="res://script/main_menu.gd" id="1_0ykhv"]
+[ext_resource type="Texture2D" uid="uid://mkbwvk5seop8" path="res://imagines/White color _ cor branca branco (1).jpeg" id="2_2wh52"]
+[ext_resource type="Script" uid="uid://buaqm2yo3l2th" path="res://script/texture_rect.gd" id="3_ow34m"]
+[ext_resource type="Script" uid="uid://bkmvn4rvs6y7i" path="res://script/v_box_container.gd" id="4_l72w3"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
-anchors_preset = 0
+anchor_top = -0.113000005
+anchor_right = 0.9620001
+anchor_bottom = 1.307
 offset_left = 570.5713
-offset_top = 364.5584
-offset_right = 570.5713
-offset_bottom = 364.5584
-script = ExtResource("1_eiy7p")
+offset_top = 437.7824
+offset_right = -537.65283
+offset_bottom = -482.37762
+script = ExtResource("1_0ykhv")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = -470.5713
-offset_top = -435.5584
-offset_right = 675.4287
-offset_bottom = 520.4416
-texture = ExtResource("2_h7a2f")
+offset_left = -570.5713
+offset_top = -510.5584
+offset_right = 577.4287
+offset_bottom = 445.4416
+texture = ExtResource("2_2wh52")
+script = ExtResource("3_ow34m")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -33,6 +38,7 @@ offset_right = 48.0
 offset_bottom = 50.5
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("4_l72w3")
 
 [node name="StartButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2

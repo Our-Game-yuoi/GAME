@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhf11h7njtgb7"]
+
+[ext_resource type="Script" uid="uid://b7o58ky41d3sj" path="res://script/intro_scene.gd" id="1_g6t57"]
+[ext_resource type="Script" uid="uid://bmdykgde8eckb" path="res://script/text_label.gd" id="2_ngq6t"]
+
+[node name="IntroScene" type="Control"]
+layout_mode = 3
+anchor_right = 1.381
+anchor_bottom = 1.2650001
+offset_left = 633.416
+offset_top = 382.0024
+offset_right = -957.4961
+offset_bottom = -437.71768
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_g6t57")
+
+[node name="TextLabel" type="Label" parent="."]
+custom_minimum_size = Vector2(24, 30)
+layout_mode = 1
+offset_left = -621.416
+offset_top = -380.0024
+offset_right = 511.58398
+offset_bottom = 246.99759
+script = ExtResource("2_ngq6t")
